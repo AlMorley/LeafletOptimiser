@@ -2,15 +2,15 @@ import warnings
 warnings.filterwarnings("ignore")
 import os
 
-from everystreet.libs.tools import *
-from everystreet.libs.graph_route import plot_graph_route
+from LeafletOptimiser.libs.tools import *
+from LeafletOptimiser.libs.graph_route import plot_graph_route
 
 import networkx as nx
 import osmnx as ox
 import matplotlib.pyplot as plt
 
-from everystreet.network import Network
-from everystreet.network.algorithms import hierholzer
+from LeafletOptimiser.network import Network
+from LeafletOptimiser.network.algorithms import hierholzer
 ox.config(use_cache=True, log_console=True)
 CUSTOM_FILTER = (
     '["highway"]["area"!~"yes"]["highway"!~"bridleway|bus_guideway|bus_stop|construction|cycleway|elevator|footway|'
